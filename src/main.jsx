@@ -4,10 +4,10 @@ import './index.css';
 import App from './App.jsx';
 import Cart from './Cart.jsx';
 import Layout from './Layout.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { CartProvider } from './Cartcontext.jsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: (
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: '/',
+        index: true,
         element: <App />
       },
       {
