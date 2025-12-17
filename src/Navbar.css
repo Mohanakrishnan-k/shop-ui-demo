@@ -1,0 +1,321 @@
+nav{
+    background-color: #121429;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    gap: 5px;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.logo{
+    width: 90px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.search-bar{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    flex: 1;
+    min-width: 400px;
+}
+
+.location-div{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    height: 40px;
+    align-items: end;
+    padding: 5px;
+    margin-left: -10px;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+}
+
+.location-div p{
+    font-size: 8px;
+    margin-left: 2px;
+}
+
+h5,h6{
+    color: white;
+}
+p{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.text{
+    font-size: 9px;
+}
+
+span{
+    font-size: 12px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+.drop-down{
+    width: 40px;
+    height: 20px;
+}
+
+select{
+    width:40px;
+    height: 30px;
+    padding-left: 2px;
+    outline: none;
+    border: none;
+    background-color: #c9c7c1;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.input{
+    outline: none;
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.input-div{
+   width: 100%;
+}
+
+.search{
+    display: flex;
+    width: 30px;
+    background-color: #edb553;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.search-icon{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.location-icon{
+    color: white;
+}
+
+.orders,.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.orders,.cart-div{
+    padding: 0px 0px 0px 5px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid transparent;
+}
+
+.sign-in{
+    height: 40px;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+.language{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.box:hover{
+   border: 1px solid white;
+}
+
+.div-bottom{
+    height: 28px;
+    background-color: #29253d;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.div-bottom p{
+  padding: 5px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.div-bottom p:hover{
+    border: 1px solid white;
+}
+
+.list-div{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid transparent;
+    align-items: center;
+    width: 40px;
+}
+
+.list-div p{
+    margin-left: -3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.list-div P:hover{
+    border: 1px solid transparent;
+}
+.list-icon{
+    font-size: 20px;
+    color: white;
+}
+.list-div:hover{
+  border: 1px solid white;
+}
+
+.cart{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.cart-items{
+   position: absolute;
+   color: rgb(254, 97, 0);
+   top: 2px;
+   left: 18px;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  nav {
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 70px;
+    margin-left: 0;
+  }
+
+
+  .location-div {
+    display: none; 
+  }
+
+
+  .search-bar {
+    min-width: 0;
+    flex: 1;
+    height: 32px;
+  }
+
+  .drop-down {
+    width: 35px;
+  }
+  select {
+    width: 35px;
+    height: 32px;
+  }
+
+  .input {
+    height: 32px;
+  }
+
+  .search {
+    width: 35px;
+  }
+
+  .language,
+  .orders,
+  .sign-in {
+    display: none;
+  }
+
+  .cart-div {
+    width: auto;
+    height: auto;
+    padding: 0 5px;
+  }
+
+  .cart {
+    font-size: 26px;
+  }
+
+  .cart-items {
+    top: 8px;
+    left: 15px;
+    font-size: 13px;
+  }
+
+
+  .div-bottom {
+    overflow-x: auto;
+    text-wrap: nowrap;
+    padding-left: 5px;
+  }
+
+  .div-bottom p {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .list-div {
+    width: auto;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    gap: 4px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .search-bar {
+    height: 30px;
+  }
+
+  .cart {
+    font-size: 24px;
+  }
+
+  .cart-items {
+    font-size: 12px;
+    top: 8px;
+    left: 13px;
+  }
+
+  .div-bottom {
+    height: 26px;
+  }
+
+  .div-bottom p {
+    font-size: 11px;
+  }
+}
