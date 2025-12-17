@@ -17,6 +17,7 @@ nav{
     margin-left: 5px;
     padding: 5px;
     border: 1px solid transparent;
+    border-radius: 15px;
 }
 
 .search-bar{

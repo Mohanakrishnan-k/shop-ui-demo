@@ -1,5 +1,5 @@
 import './Navbar.css';
-import amazon from './assets/amazon-icon.png';
+import amazone from './assets/Amazone.png';
 import { useCart } from './Cartcontext';
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <img src={amazon} alt="logo" className='logo box' onClick={getHome} />
+        <img src={amazone} alt="logo" className='logo box' onClick={getHome} />
         <div className='location-div box'>
           <i className="bi bi-geo-alt-fill location-icon"></i>
           <div className='location'>
