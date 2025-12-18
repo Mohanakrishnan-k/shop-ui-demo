@@ -2,6 +2,7 @@
   "name": "shop-ui-demo",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/Mohanakrishnan-k/shop-ui-demo",
   "type": "module",
   "scripts": {
     "dev": "vite",
