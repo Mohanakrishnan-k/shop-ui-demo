@@ -18,7 +18,7 @@ const Content = ({handleAdd, changeNext, changePrevious, products, productNext, 
          <div className='products-div'>
           <div className='product-items'>
             <div className='title'>
-             <p>You are on amazon.com. shop for millions of products and fast local delivery</p>
+             <p>You are on e-com shop for millions of products and fast local delivery</p>
            </div>
             <div className='product-title'>
               <h3>Brand new's</h3>

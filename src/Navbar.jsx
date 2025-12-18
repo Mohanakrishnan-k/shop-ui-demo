@@ -1,5 +1,5 @@
 import './Navbar.css';
-import amazone from './assets/Amazone.png';
+import logo from './assets/logo.png';
 import { useCart } from './Cartcontext';
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <img src={amazone} alt="logo" className='logo box' onClick={getHome} />
+        <img src={logo} alt="logo" className='logo box' onClick={getHome} />
         <div className='location-div box'>
           <i className="bi bi-geo-alt-fill location-icon"></i>
           <div className='location'>
@@ -24,7 +24,7 @@ const Navbar = () => {
             </select>
           </div>
           <div className='input-div'>
-            <input type="text" className='input' id='input' placeholder='Search Amazon' />
+            <input type="text" className='input' id='input' placeholder='Search' />
           </div>
           <div className='search'>
             <i className="bi bi-search search-icon"></i>

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
         <p>
         This is a demo project created for learning purposes only.  
-        Not affiliated with Amazon or any real company.
+        Not affiliated with any real company.
         </p>
     </div>
   )
